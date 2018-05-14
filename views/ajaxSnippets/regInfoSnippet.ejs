@@ -1,0 +1,22 @@
+
+<div style="margin:10px;font-size: 20">
+<a href=<%= downloadReport%>>Download Report!</a>
+</div>
+
+<h3>Activation Number = <%= ActivationNumber%></h3>
+<h3>Total Activations = <%= TotalActivations%></h3>
+<table border="1">
+    <tr>
+        <td>HostID</td><td>SN</td><td>RegisterTime</td><td>IP</td><td>Activate</td>><td>e-Mail</td>
+    </tr>
+    <% datas.forEach(function(data){ %>
+        <tr>
+            <td><%= data.HostID%></td>
+            <td><%= data.SN%></td>
+            <td><%= data.RegisterTime%></td>
+            <td><%= data.IP%></td>
+            <td><%= data.Activate%></td>
+            <td><%= data.Email%></td>
+        </tr>
+    <% })%>
+</table>

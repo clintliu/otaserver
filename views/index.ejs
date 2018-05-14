@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/all.css">
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<h1 id="title"><%= title %></h1>
+<div class="container">
+    <div id="controll_layout" >
+        <div id="GetRegInfo" style="float: left;margin:5px">
+            <h2 class="form-signin-heading">Key :</h2>
+            <p id="nickError"></p>
+            <div style="margin:20px;">
+                <input name="lng" id="sn_number" value="" required="" >
+            </div>
+            <button  id="btn_get_reg_info" class="btn btn-lg btn-primary">Get Registration Report</button>
+
+        </div>
+        <div id="Deregister" style="float: left;margin:5px;margin-left: 20px">
+            <h2 class="form-signin-heading">Host ID :</h2>
+            <p id="nickError"></p>
+            <div style="margin:20px;">
+                <input name="lng" id="host_id" value="" required="" >
+            </div>
+            <button  id="btn_de_reg" class="btn btn-lg btn-primary">Deregister</button>
+
+        </div>
+        <div id="Restart" style="float: left;margin:5px;margin-left: 20px">
+            <h2 class="form-signin-heading">Restart Server</h2>
+            <button  id="btn_reopen_server" class="btn btn-lg btn-primary">Restart Server</button>
+
+        </div>
+    </div>
+</div>
+<div id="reginfo_area" style="margin: 20px"></div>
+
+</body>
+</html>
