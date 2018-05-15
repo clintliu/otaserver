@@ -29,9 +29,22 @@ router.get('/',cors(), function(req, res, next) {
   // res.render('index', { title: 'Express', });
   //   res.status(config.status.OK).send('AWIND Key Server: ');
 
-    res.render('../views/index',{title:'AWIND Key Management System Test'});
+    //res.render('../views/index',{title:'AWIND Key Management System Test'});
+    res.send('OTA Server');
+});
+
+router.post('/api/req_version/',cors(),function (req, res, next) {
+
+    var response = {status:"ok",version:"003",url:"https://xxx.xxx.xxx"};
+
+    res.send(response);
 
 });
+
+
+
+
+
 router.get('/gettotalactivation/:sn',cors(), function(req, res, next) {
     var sn = req.params.sn;
     console.log("post testq " + sn);
